@@ -1,22 +1,11 @@
 #include <stdio.h>
 int main()
 {
-int age;
-float height;
-double salary;
-char grade;
-printf("Enter age: ");
-scanf("%d", &age);
-printf("Enter height: ");
-scanf("%f", &height);
-printf("Enter salary: ");
-scanf("%lf", &salary);
-printf("Enter grade: ");
-scanf(" %c", &grade);
-printf("\n--- Details ---\n");
-printf("Age = %d\n", age);
-printf("Height = %.2f\n", height);
-printf("Salary = %.2lf\n", salary);
-printf("Grade = %c\n", grade);
+float radius, area;
+const float PI = 3.14159;
+printf("Enter radius of circle: ");
+scanf("%f", &radius);
+area = PI * radius * radius;
+printf("Area of circle = %.2f\n", area);
 return 0;
-}    
+}
